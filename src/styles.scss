@@ -1,1 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
+#meetingSDKElement {
+  position: relative !important;
+}
+
+.MuiTooltip-popperArrow {
+  display: none;
+}
+
+#root-zoom-container {
+  position: relative;
+
+  #primary-zoom-container {
+    border-radius: 0px;
+    padding: 0px;
+  }
+
+  #top-section-container {
+    #topbar {
+      display: none;
+    }
+    .custom-feed-size {
+      width: 300px;
+      height: 168.75px;
+      //1.25
+      #custom-feed-container {
+        height: 100%;
+        width: 100%;
+
+        #canvas-container {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+  #bottom-section-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 95%;
+    display: none;
+    background-color: transparent;
+
+    #shareScreenBTN {
+      display: none;
+    }
+
+    #participentsBTN {
+      display: none;
+    }
+
+    #moreBTNContainer {
+      display: none;
+    }
+
+    #endCallBTNContainer {
+      border-left: 0;
+      padding-left: 0;
+    }
+  }
+
+  .display-section {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
